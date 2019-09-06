@@ -1,0 +1,118 @@
+{
+	"id": "a45b4b14-08bf-4ec8-8400-98725241dcef",
+	"name": "PAN",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"c24e8991-c76a-42a4-9342-16dc9977f73d",
+		"a2ff6afe-fccc-471a-9568-a040e38567d1",
+		"eb04cc92-9506-4f2a-8cf1-63876f8acd09",
+		"1ae1f7b8-8edc-4b9b-b44a-8524adea89b1",
+		"4565f8b5-02a4-43b2-afeb-884be485c8b1"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "1ae1f7b8-8edc-4b9b-b44a-8524adea89b1",
+			"name": "4 - Consultar Municípios",
+			"url": "http://localhost:8080/api/pan/buscar_municipios/15",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "4565f8b5-02a4-43b2-afeb-884be485c8b1",
+			"name": "5 - Alterar Endereco",
+			"url": "http://localhost:8080/api/pan/atualizar_endereco/1/",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n        \"id\": 1,\r\n        \"cep\": \"04046-100\",\r\n        \"logradouro\": \"TESTE123\",\r\n        \"complemento\": \"100\",\r\n        \"bairro\": \"VILA JARDINS\",\r\n        \"localidade\": \"SÃO PAULO\",\r\n        \"uf\": \"SP\",\r\n        \"unidade\": \"\",\r\n        \"ibge\": \"\",\r\n        \"gia\": \"\"\r\n    }",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a2ff6afe-fccc-471a-9568-a040e38567d1",
+			"name": "2 - Consultar CEP",
+			"url": "http://localhost:8080/api/pan/buscar_endereco_cep_cliente/04046-123",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "c24e8991-c76a-42a4-9342-16dc9977f73d",
+			"name": "1 - Consultar Cliente",
+			"url": "http://localhost:8080/api/pan/buscar_cliente_cpf/123456789/",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "eb04cc92-9506-4f2a-8cf1-63876f8acd09",
+			"name": "3 - Consultar Estados",
+			"url": "http://localhost:8080/api/pan/buscar_estados/",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}
